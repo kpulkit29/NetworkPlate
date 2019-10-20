@@ -5,10 +5,23 @@
     <title>Network Plate</title>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <h1>This is a demo page</h1>
+    <form>
+        <input value="Hey there"/>
+        <button>Go</button>
+        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"/>
+        <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80s" />
+    </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.map"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.map"></script>
-    <script src='scripts/main.js'></script>  
+    <script>
+        setTimeout(() => {
+            var sc = document.createElement("script");
+            sc.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js";
+            document.getElementsByTagName("body")[0].appendChild(sc);
+        }, 3000)
+    </script>
+    <script src='scripts/main.js'></script>
 </body>
 </html>

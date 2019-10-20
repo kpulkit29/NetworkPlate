@@ -12,20 +12,17 @@
 
     /**
      * Removed duplicates for array of objects
-     * @param {Object[]} arr 
+     * @param {Object[]} arr
      */
     function removeDuplicates(arr) {
         return arr.filter(function(item) {
-            if(!namesMap[item.name]) {
+            if (!namesMap[item.name]) {
                 namesMap[item.name] = true;
                 return true;
-            }
-
-            else {
+            } else {
                 return false;
             }
         });
-
     }
     /**
      *
@@ -75,11 +72,11 @@
         if (!document.getElementsByClassName('table-main')[0]) {
             var table = createElement(
                 'div',
-                'height:200px;width:300px;padding:2px 2px 2px 2px;color:lime;background-color:black;overflow-y:auto;border: 1px solid lime;border-radius:4px;'
+                'position:fixed;top:10px;right:20px;height:200px;width:300px;padding:2px 2px 2px 2px;color:lime;background-color:black;overflow-y:auto;border: 1px solid lime;border-radius:4px;'
             );
             table.classList.add('table-main');
             table.innerHTML +=
-                '<div style="color:lime;width:100%;text-align:right;cursor:pointer" onclick="closeNetworkTable()">X</div><div style="display:flex;text-align:center;"> <div class="script-name" style="width:70%;height:auto;"><div>Script Name</div></div><div class="script-duration" style="width:30%;height:auto;"><div>Duration</div></div> <div>';
+                '<div style="color:lime;width:100%;display:flex;justify-content:flex-end"><div style="width:8%;cursor:pointer;" onclick="closeNetworkTable()">X</div></div><div style="display:flex;text-align:center;"> <div class="script-name" style="width:70%;height:auto;"><div>Script Name</div></div><div class="script-duration" style="width:30%;height:auto;"><div>Duration</div></div> <div>';
             var body = document.getElementsByTagName('body')[0];
             body.appendChild(table);
         }
@@ -108,7 +105,7 @@
         window.networkIntervalId = setInterval(function() {
             var scriptEntries = filterEntries('script'),
                 newEntry = {};
-            
+
             scriptEntries.forEach(function(item) {
                 newEntry.name = item.name;
                 newEntry.duration = item.duration;

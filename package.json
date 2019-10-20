@@ -1,5 +1,5 @@
 {
-  "name": "network-table",
+  "name": "NetworkPlate",
   "version": "1.0.0",
   "description": "A JS library to bring network tab on your screen",
   "main": "index.js",

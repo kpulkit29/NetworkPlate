@@ -6,5 +6,7 @@ A Development Phase tool to bring network information to your screen
 
 **NetworkPlate** polls for the network entries and depicts the gathered information on the screen. The polling will stop as and when the NetworkPlate is closed. Instead of appending entries on the fly entries are added in a batch.
 
-
+# Todos
+  - Make NetworkPlate draggable
+  - Sorting w.r.t duration
 

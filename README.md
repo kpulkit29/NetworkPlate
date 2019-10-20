@@ -11,6 +11,8 @@ A Development Phase tool to bring network information to your screen
 
 **NetworkPlate** polls for the network entries and depicts the gathered information on the screen. The polling will stop as and when the NetworkPlate is closed. Instead of appending entries on the fly entries are added in a batch.
 
+**Find it** [Here](https://www.npmjs.com/package/network-plate)
+
 # How to use ?
 
 Do ``` npm i network-plate ``` in your project

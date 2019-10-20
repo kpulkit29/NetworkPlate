@@ -14,6 +14,7 @@ A Development Phase tool to bring network information to your screen
 # How to use ?
 
 Do ``` npm i network-plate ``` in your project
+
 **Note:** Place the below mentioned code in body tag (preferably just before the </body> tag)
 
 For minified code add this
